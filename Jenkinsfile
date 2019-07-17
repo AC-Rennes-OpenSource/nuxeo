@@ -69,6 +69,11 @@ pipeline {
       }
     }
     stage('Run "dev" unit tests') {
+      when {
+        expression {
+          return false
+        }
+      }
       steps {
         setGitHubBuildStatus('utests/dev', 'Unit tests - dev environment', 'PENDING')
         container('maven') {
@@ -118,7 +123,7 @@ pipeline {
       steps {
         setGitHubBuildStatus('docker', 'Build and deploy Docker image', 'PENDING')
         container('maven') {
-          withEnv(["VERSION=${NUXEO_VERSION}-${BRANCH_NAME}-${BUILD_NUMBER}"]) {
+          withEnv(["VERSION=${NUXEO_VERSION}"]) {
             echo """
             ----------------------------------------
             Build and deploy Docker image
