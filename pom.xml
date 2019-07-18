@@ -5268,7 +5268,7 @@
       </plugins>
     </pluginManagement>
   </build>
-
+<!-- 
   <reporting>
     <plugins>
       <plugin>
@@ -5335,7 +5335,7 @@
       </plugin>
     </plugins>
   </reporting>
-
+ -->
   <profiles>
     <profile>
       <id>jdt</id>
