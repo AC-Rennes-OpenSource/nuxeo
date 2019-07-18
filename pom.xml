@@ -6082,8 +6082,7 @@
       <url>scpexe://gironde.nuxeo.com/home/mavenweb/site/</url>
     </site>
     <repository>
-      <id>hotfix-releases</id>
-      <!-- <url>http://mavenin.nuxeo.com/nexus/content/repositories/hotfix-releases</url>  -->
+      <id>osivia-thirdparty</id>
       <url>http://www.osivia.org/nexus/content/repositories/thirdparty/org/</url>
     </repository>
     <snapshotRepository>
