@@ -21,7 +21,7 @@
   </modules>
 
   <properties>
-    <nuxeo.importer.version>6.0-HF46-SNAPSHOT</nuxeo.importer.version>
+    <nuxeo.importer.version>6.1-SNAPSHOT</nuxeo.importer.version>
   </properties>
 
   <dependencyManagement>

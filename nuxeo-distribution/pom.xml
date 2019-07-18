@@ -19,7 +19,7 @@
   </prerequisites>
 
   <properties>
-    <nuxeo.distribution.version>6.0-HF46-SNAPSHOT</nuxeo.distribution.version>
+    <nuxeo.distribution.version>6.1-SNAPSHOT</nuxeo.distribution.version>
   </properties>
 
   <modules>

@@ -13,7 +13,7 @@
   <packaging>pom</packaging>
 
   <properties>
-    <nuxeo.quota.version>6.0-HF46-SNAPSHOT</nuxeo.quota.version>
+    <nuxeo.quota.version>6.1-SNAPSHOT</nuxeo.quota.version>
   </properties>
 
   <modules>
