@@ -6077,10 +6077,12 @@
   </pluginRepositories>
 
   <distributionManagement>
+  <!-- 
     <site>
       <id>maven-website</id>
       <url>scpexe://gironde.nuxeo.com/home/mavenweb/site/</url>
     </site>
+     -->
     <repository>
       <id>osivia-thirdparty</id>
       <url>http://www.osivia.org/nexus/content/repositories/thirdparty/org/</url>
