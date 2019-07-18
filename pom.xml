@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.nuxeo</groupId>
   <artifactId>nuxeo-ecm</artifactId>
-  <version>6.0-HF46-SNAPSHOT</version>
+  <version>6.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Nuxeo ECM Projects</name>
   <description>Nuxeo ECM Platform and related components.</description>
@@ -5999,8 +5999,8 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git://github.com/nuxeo/nuxeo.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com:nuxeo/nuxeo.git</developerConnection>
+    <connection>scm:git:git://github.com/osivia/nuxeo.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:osivia/nuxeo.git</developerConnection>
     <url>http://nuxeo.github.io</url>
   </scm>
 
@@ -6083,7 +6083,8 @@
     </site>
     <repository>
       <id>hotfix-releases</id>
-      <url>http://mavenin.nuxeo.com/nexus/content/repositories/hotfix-releases</url>
+      <!-- <url>http://mavenin.nuxeo.com/nexus/content/repositories/hotfix-releases</url>  -->
+      <url>http://www.osivia.org/nexus/content/repositories/thirdparty/org/</url>
     </repository>
     <snapshotRepository>
       <id>hotfix-snapshots</id>
