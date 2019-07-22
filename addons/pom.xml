@@ -12,12 +12,6 @@
   <packaging>pom</packaging>
   <description>Nuxeo Addons parent POM</description>
 
-  <scm>
-    <connection>scm:git:git://github.com/nuxeo/addons.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com:nuxeo/addons.git</developerConnection>
-    <url>https://github.com/nuxeo/addons</url>
-  </scm>
-
   <properties>
     <nuxeo.addons.version>6.1.0</nuxeo.addons.version>
     <nuxeo.opencmis.version>6.1.0</nuxeo.opencmis.version>
