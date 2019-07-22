@@ -6089,7 +6089,7 @@
      -->
     <repository>
       <id>osivia-thirdparty</id>
-      <url>http://www.osivia.org/nexus/content/repositories/thirdparty/org/</url>
+      <url>http://www.osivia.org/nexus/content/repositories/thirdparty/</url>
     </repository>
     <snapshotRepository>
       <id>hotfix-snapshots</id>
