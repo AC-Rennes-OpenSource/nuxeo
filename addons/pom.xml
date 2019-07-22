@@ -77,56 +77,56 @@
   <modules>
     <module>nuxeo-platform-lang-ext</module>
     <module>nuxeo-chemistry</module>
-    <module>nuxeo-business-days-management</module>
+    <!-- <module>nuxeo-business-days-management</module>
     <module>nuxeo-core-binarymanager-sql</module>
-    <module>nuxeo-http-client</module>
+    <module>nuxeo-http-client</module> -->
     <module>nuxeo-platform-document-routing</module>
-    <module>nuxeo-platform-faceted-search</module>
+    <!-- <module>nuxeo-platform-faceted-search</module> -->
     <module>nuxeo-platform-error-web</module>
     <module>nuxeo-platform-forms-layout-demo</module>
     <module>nuxeo-platform-audio</module>
     <module>nuxeo-platform-video</module>
-    <module>nuxeo-platform-categorization</module>
+    <!-- <module>nuxeo-platform-categorization</module>  -->
     <module>nuxeo-platform-user-registration</module>
     <module>nuxeo-shell</module>
     <module>nuxeo-filesystem-connectors</module>
     <module>nuxeo-platform-shibboleth-groups-web</module>
     <module>nuxeo-apidoc-server</module>
-    <module>nuxeo-birt</module>
+    <!-- <module>nuxeo-birt</module>
     <module>nuxeo-activity</module>
-    <module>nuxeo-social-collaboration</module>
-    <module>nuxeo-platform-suggestbox</module>
-    <module>nuxeo-dam</module>
+    <module>nuxeo-social-collaboration</module>-->
+    <module>nuxeo-platform-suggestbox</module> 
+    <!-- <module>nuxeo-dam</module>  dépend de activity -->
     <module>nuxeo-quota</module>
-    <module>nuxeo-platform-indexing-gateway</module>
-    <module>nuxeo-exalead-connector</module>
+    <!-- <module>nuxeo-platform-indexing-gateway</module>
+    <module>nuxeo-exalead-connector</module> -->
     <module>nuxeo-signature</module>
-    <module>nuxeo-rating</module>
+    <!-- <module>nuxeo-rating</module> -->
     <module>nuxeo-agenda</module>
     <module>nuxeo-multi-tenant</module>
     <module>nuxeo-core-binarymanager-cloud</module>
     <module>nuxeo-diff</module>
     <module>nuxeo-template-rendering</module>
-    <module>nuxeo-web-mobile</module>
+    <!-- <module>nuxeo-web-mobile</module> -->
     <module>nuxeo-csv</module>
     <module>nuxeo-tree-snapshot</module>
     <module>nuxeo-groups-rights-audit</module>
-    <module>nuxeo-drive-server</module>
+    <!-- <module>nuxeo-drive-server</module>
     <module>nuxeo-dam-pdf-export</module>
-    <module>nuxeo-resources-compat</module>
+    <module>nuxeo-resources-compat</module> -->
     <module>nuxeo-dmk-adaptor</module>
     <module>nuxeo-webengine-sites</module>
     <module>nuxeo-style-guide</module>
-    <module>nuxeo-imaging-recompute</module>
+    <!-- <module>nuxeo-imaging-recompute</module>
     <module>nuxeo-javaagent</module>
     <module>nuxeo-session-inspector</module>
-    <module>nuxeo-box-api</module>
+    <module>nuxeo-box-api</module> -->
     <module>nuxeo-platform-importer</module>
     <module>nuxeo-easyshare</module>
     <module>nuxeo-duoweb-authentication</module>
-    <module>nuxeo-sample-project</module>
+    <!-- <module>nuxeo-sample-project</module> -->
     <module>nuxeo-logs-viewer</module>
-    <module>nuxeo-platform-spreadsheet</module>
+    <!-- <module>nuxeo-platform-spreadsheet</module> implique npm -->
     <module>nuxeo-segment.io-connector</module>
     <module>nuxeo-datadog-reporter</module>
     <module>nuxeo-platform-smart-search</module>

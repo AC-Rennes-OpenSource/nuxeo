@@ -92,6 +92,9 @@
     <module>nuxeo-theme</module>
     <module>nuxeo-webengine</module>
     <module>nuxeo-dm</module>
+    
+    <module>addons</module>
+    <module>nuxeo-distribution</module>
   </modules>
 
   <prerequisites>
@@ -5965,6 +5968,7 @@
     <!-- Used to include addons and/or nuxeo-distribution in a single run -->
     <profile>
       <id>addons</id>
+      <activation></activation>
       <modules>
         <module>addons</module>
       </modules>

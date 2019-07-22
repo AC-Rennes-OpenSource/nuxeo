@@ -23,20 +23,24 @@
   </properties>
 
   <modules>
+  <!-- 
     <module>nuxeo-functional-tests</module>
     <module>nuxeo-startup-wizard</module>
+        -->
     <module>nuxeo-launcher</module>
     <module>nuxeo-distribution-resources</module>
+ 
     <module>nuxeo-distribution-tests</module>
-    <module>nuxeo-distribution-coreserver</module>
+    <module>nuxeo-distribution-coreserver</module> 
     <module>nuxeo-distribution-cap</module>
-    <module>nuxeo-marketplace-dm</module>
+	<module>nuxeo-marketplace-dm</module>
     <module>nuxeo-distribution-tomcat</module>
     <!-- Functional Tests -->
+    <!-- 
     <module>nuxeo-distribution-tomcat-wizard-tests</module>
     <module>nuxeo-distribution-cap-webdriver-tests</module>
     <module>nuxeo-distribution-cap-funkload-tests</module>
-    <module>nuxeo-distribution-cap-selenium-tests</module>
+    <module>nuxeo-distribution-cap-selenium-tests</module> -->
   </modules>
 
   <profiles>
