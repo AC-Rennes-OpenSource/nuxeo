@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.nuxeo</groupId>
     <artifactId>nuxeo-addons-parent</artifactId>
-    <version>6.1.0</version>
+    <version>6.1.1</version>
     <relativePath>../addons/pom.xml</relativePath>
   </parent>
 
@@ -19,14 +19,14 @@
   </prerequisites>
 
   <properties>
-    <nuxeo.distribution.version>6.1.0</nuxeo.distribution.version>
+    <nuxeo.distribution.version>6.1.1</nuxeo.distribution.version>
   </properties>
 
   <modules>
-  <!-- 
-    <module>nuxeo-functional-tests</module>
+ 
+    <module>nuxeo-functional-tests</module>  
     <module>nuxeo-startup-wizard</module>
-        -->
+
     <module>nuxeo-launcher</module>
     <module>nuxeo-distribution-resources</module>
  
