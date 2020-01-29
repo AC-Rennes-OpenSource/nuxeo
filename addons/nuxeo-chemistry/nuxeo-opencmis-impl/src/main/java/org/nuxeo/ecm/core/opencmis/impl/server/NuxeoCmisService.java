@@ -1516,7 +1516,7 @@ public class NuxeoCmisService extends AbstractCmisService implements CallContext
         IterableQueryResult res = null;
         try {
             Map<String, PropertyDefinition<?>> typeInfo = new HashMap<String, PropertyDefinition<?>>();
-            // searchAllVersions defaults to false, spec 2.2.6.1.1
+            // searchAllVersions defaults to false, spec 2.2.6.1.2
             res = queryAndFetch(statement, Boolean.TRUE.equals(searchAllVersions), typeInfo);
 
             // convert from Nuxeo to CMIS format

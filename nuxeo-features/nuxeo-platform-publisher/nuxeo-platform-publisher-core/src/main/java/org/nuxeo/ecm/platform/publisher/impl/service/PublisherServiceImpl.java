@@ -68,15 +68,15 @@ public class PublisherServiceImpl extends DefaultComponent implements
 
     private final Log log = LogFactory.getLog(PublisherServiceImpl.class);
 
-    protected Map<String, PublicationTreeDescriptor> treeDescriptors = new HashMap<String, PublicationTreeDescriptor>();
+    protected Map<String, PublicationTreeDescriptor> treeDescriptors = new ConcurrentHashMap<String, PublicationTreeDescriptor>();
 
-    protected Map<String, PublishedDocumentFactoryDescriptor> factoryDescriptors = new HashMap<String, PublishedDocumentFactoryDescriptor>();
+    protected Map<String, PublishedDocumentFactoryDescriptor> factoryDescriptors = new ConcurrentHashMap<String, PublishedDocumentFactoryDescriptor>();
 
-    protected Map<String, PublicationTreeConfigDescriptor> treeConfigDescriptors = new HashMap<String, PublicationTreeConfigDescriptor>();
+    protected Map<String, PublicationTreeConfigDescriptor> treeConfigDescriptors = new ConcurrentHashMap<String, PublicationTreeConfigDescriptor>();
 
-    protected Map<String, ValidatorsRuleDescriptor> validatorsRuleDescriptors = new HashMap<String, ValidatorsRuleDescriptor>();
+    protected Map<String, ValidatorsRuleDescriptor> validatorsRuleDescriptors = new ConcurrentHashMap<String, ValidatorsRuleDescriptor>();
 
-    protected Map<String, PublicationTreeConfigDescriptor> pendingDescriptors = new HashMap<String, PublicationTreeConfigDescriptor>();
+    protected Map<String, PublicationTreeConfigDescriptor> pendingDescriptors = new ConcurrentHashMap<String, PublicationTreeConfigDescriptor>();
 
     protected Map<String, PublicationTree> liveTrees = new ConcurrentHashMap<String, PublicationTree>();
 
@@ -132,12 +132,12 @@ public class PublisherServiceImpl extends DefaultComponent implements
 
     @Override
     public void activate(ComponentContext context) throws Exception {
-        liveTrees = new HashMap<String, PublicationTree>();
-        treeDescriptors = new HashMap<String, PublicationTreeDescriptor>();
-        factoryDescriptors = new HashMap<String, PublishedDocumentFactoryDescriptor>();
-        treeConfigDescriptors = new HashMap<String, PublicationTreeConfigDescriptor>();
-        validatorsRuleDescriptors = new HashMap<String, ValidatorsRuleDescriptor>();
-        pendingDescriptors = new HashMap<String, PublicationTreeConfigDescriptor>();
+        liveTrees = new ConcurrentHashMap<String, PublicationTree>();
+        treeDescriptors = new ConcurrentHashMap<String, PublicationTreeDescriptor>();
+        factoryDescriptors = new ConcurrentHashMap<String, PublishedDocumentFactoryDescriptor>();
+        treeConfigDescriptors = new ConcurrentHashMap<String, PublicationTreeConfigDescriptor>();
+        validatorsRuleDescriptors = new ConcurrentHashMap<String, ValidatorsRuleDescriptor>();
+        pendingDescriptors = new ConcurrentHashMap<String, PublicationTreeConfigDescriptor>();
     }
 
     // for testing cleanup
@@ -221,7 +221,7 @@ public class PublisherServiceImpl extends DefaultComponent implements
 
     @Override
     public Map<String, String> getAvailablePublicationTrees() {
-        Map<String, String> trees = new HashMap<String, String>();
+        Map<String, String> trees = new ConcurrentHashMap<String, String>();
         for (PublicationTreeConfigDescriptor desc : treeConfigDescriptors.values()) {
             String title = desc.getTitle() == null ? desc.getName()
                     : desc.getTitle();
@@ -261,7 +261,7 @@ public class PublisherServiceImpl extends DefaultComponent implements
 
         remoteLiveTrees.put(tree.getSessionId(), coreSession.getSessionId());
 
-        Map<String, String> res = new HashMap<String, String>();
+        Map<String, String> res = new ConcurrentHashMap<String, String>();
         res.put("sessionId", tree.getSessionId());
         res.put("title", tree.getTitle());
         res.put("nodeType", tree.getNodeType());
@@ -791,7 +791,7 @@ public class PublisherServiceImpl extends DefaultComponent implements
     @Override
     public Map<String, String> getParametersFor(String treeConfigName) {
         PublicationTreeConfigDescriptor desc = treeConfigDescriptors.get(treeConfigName);
-        Map<String, String> parameters = new HashMap<String, String>();
+        Map<String, String> parameters = new ConcurrentHashMap<String, String>();
         if (desc != null) {
             parameters.putAll(desc.getParameters());
         }

@@ -680,7 +680,7 @@ public class UIInputFile extends UIInput implements NamingContainer {
     }
 
     /**
-     * @since 6.1.1
+     * @since 6.1.2
      */
     private void notifyPreviousErrors(FacesContext context) {
         final Object hasError = context.getAttributes().get(NuxeoResponseStateManagerImpl.MULTIPART_SIZE_ERROR_FLAG);
