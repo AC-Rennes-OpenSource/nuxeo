@@ -40,13 +40,17 @@ public class TracerFactory implements TracerFactoryMBean {
 
     public static final String AUTOMATION_TRACE_PROPERTY = "org.nuxeo.automation.trace";
 
+    public static final String AUTOMATION_TRACE_CACHE_ENABLE_PROPERTY = "org.nuxeo.automation.trace.cache.enable";
+
+    public static final String AUTOMATION_TRACE_CACHE_TIMEOUT_PROPERTY = "org.nuxeo.automation.trace.cache.timeout";
+
     public static final String AUTOMATION_TRACE_PRINTABLE_PROPERTY = "org.nuxeo.automation.trace.printable";
 
     protected static final Integer CACHE_CONCURRENCY_LEVEL = 10;
 
     protected static final Integer CACHE_MAXIMUM_SIZE = 1000;
 
-    protected static final Integer CACHE_TIMEOUT = 1;
+    protected static final String CACHE_TIMEOUT = "60";
 
     private static final Log log = LogFactory.getLog(TracerFactory.class);
 
@@ -56,11 +60,20 @@ public class TracerFactory implements TracerFactoryMBean {
 
     protected boolean recording;
 
+    protected boolean doTraceCaching;
+
+    protected long cacheTimeOut;
+
     protected Trace lastError;
 
     public TracerFactory() {
-        tracesCache = CacheBuilder.newBuilder().concurrencyLevel(CACHE_CONCURRENCY_LEVEL).maximumSize(
-                CACHE_MAXIMUM_SIZE).expireAfterWrite(CACHE_TIMEOUT, TimeUnit.HOURS).build();
+        doTraceCaching = Framework.isBooleanPropertyTrue(AUTOMATION_TRACE_CACHE_ENABLE_PROPERTY);
+        cacheTimeOut = Long.parseLong(Framework.getProperty(AUTOMATION_TRACE_CACHE_TIMEOUT_PROPERTY, CACHE_TIMEOUT));
+        tracesCache = CacheBuilder.newBuilder()
+                      .concurrencyLevel(CACHE_CONCURRENCY_LEVEL)
+                      .maximumSize(CACHE_MAXIMUM_SIZE)
+                      .expireAfterWrite(cacheTimeOut, TimeUnit.MINUTES)
+                      .build();
         recording = Framework.isBooleanPropertyTrue(AUTOMATION_TRACE_PROPERTY);
         printableTraces = Framework.getProperty(AUTOMATION_TRACE_PRINTABLE_PROPERTY, "*");
     }
@@ -189,7 +202,9 @@ public class TracerFactory implements TracerFactoryMBean {
     }
 
     public void onTrace(Trace popped) {
-        recordTrace(popped);
+        if (doTraceCaching) {
+            recordTrace(popped);
+        }
     }
 
     @Override
