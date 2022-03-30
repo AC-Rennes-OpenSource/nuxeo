@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.nuxeo</groupId>
   <artifactId>nuxeo-ecm</artifactId>
-  <version>6.1.3</version>
+  <version>RAB-6.1.4-RC01</version>
   <packaging>pom</packaging>
   <name>Nuxeo ECM Projects</name>
   <description>Nuxeo ECM Platform and related components.</description>
@@ -4570,8 +4570,8 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
       <plugin>
@@ -4627,7 +4627,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.4.2</version>
+        <version>2.5.3</version>
         <configuration>
           <preparationGoals>clean install</preparationGoals>
         </configuration>
@@ -6080,13 +6080,20 @@
     </pluginRepository>
   </pluginRepositories>
 
+
   <distributionManagement>
-  <!-- 
-    <site>
-      <id>maven-website</id>
-      <url>scpexe://gironde.nuxeo.com/home/mavenweb/site/</url>
-    </site>
-     -->
+    <repository>
+      <id>${releaseRepoId}</id>
+      <url>${releaseRepoUrl}</url>
+    </repository>
+    <snapshotRepository>
+      <id>${snapshotRepoId}</id>
+      <url>${snapshotRepoUrl}</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+<!--
+  <distributionManagement>
     <repository>
       <id>osivia-thirdparty</id>
       <url>http://www.osivia.org/nexus/content/repositories/thirdparty/</url>
@@ -6097,5 +6104,6 @@
       <uniqueVersion>true</uniqueVersion>
     </snapshotRepository>
   </distributionManagement>
+-->
 
 </project>
