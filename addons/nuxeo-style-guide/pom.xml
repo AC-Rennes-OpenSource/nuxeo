@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.nuxeo</groupId>
     <artifactId>nuxeo-ecm</artifactId>
-    <version>RAB-6.1.4-RC04-SNAPSHOT</version>
+    <version>RAB-6.1.4</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
