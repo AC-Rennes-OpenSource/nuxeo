@@ -5,7 +5,7 @@
   <parent>
     <artifactId>nuxeo-dm-parent</artifactId>
     <groupId>org.nuxeo.ecm.platform</groupId>
-    <version>RAB-6.1.4-RC03</version>
+    <version>RAB-6.1.4-RC04-SNAPSHOT</version>
   </parent>
 
   <artifactId>nuxeo-platform-webapp-types</artifactId>
