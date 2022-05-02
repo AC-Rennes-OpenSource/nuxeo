@@ -19,7 +19,7 @@
   </prerequisites>
 
   <properties>
-    <nuxeo.distribution.version>6.1.3</nuxeo.distribution.version>
+	  <nuxeo.distribution.version>${project.version}</nuxeo.distribution.version>
   </properties>
 
   <modules>
