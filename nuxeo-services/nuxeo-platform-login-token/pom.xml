@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.nuxeo.ecm.platform</groupId>
     <artifactId>nuxeo-services-parent</artifactId>
-    <version>RAB-6.1.5</version>
+    <version>RAB-6.1.6-RC01-SNAPSHOT</version>
   </parent>
 
   <artifactId>nuxeo-platform-login-token</artifactId>
