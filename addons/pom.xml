@@ -13,58 +13,58 @@
   <description>Nuxeo Addons parent POM</description>
 
   <properties>
-    <nuxeo.addons.version>6.1.3</nuxeo.addons.version>
-    <nuxeo.opencmis.version>6.1.3</nuxeo.opencmis.version>
-    <nuxeo.businessdays.version>6.1.3</nuxeo.businessdays.version>
-    <nuxeo.facetedsearch.version>6.1.3</nuxeo.facetedsearch.version>
-    <nuxeo.shell.version>6.1.3</nuxeo.shell.version>
-    <nuxeo.webembedded.version>6.1.3</nuxeo.webembedded.version>
-    <nuxeo.opensocial.version>6.1.3</nuxeo.opensocial.version>
-    <nuxeo.fsconnectors.version>6.1.3</nuxeo.fsconnectors.version>
-    <nuxeo.classification.version>6.1.3</nuxeo.classification.version>
-    <nuxeo.importer.version>6.1.3</nuxeo.importer.version>
-    <nuxeo.routing.version>6.1.3</nuxeo.routing.version>
-    <nuxeo.smartsearch.version>6.1.3</nuxeo.smartsearch.version>
-    <nuxeo.audio.version>6.1.3</nuxeo.audio.version>
-    <nuxeo.video.version>6.1.3</nuxeo.video.version>
-    <nuxeo.categorization.version>6.1.3</nuxeo.categorization.version>
-    <nuxeo.replication.version>6.1.3</nuxeo.replication.version>
-    <nuxeo.activity.version>6.1.3</nuxeo.activity.version>
-    <nuxeo.sc.version>6.1.3</nuxeo.sc.version>
-    <nuxeo.birt.version>6.1.3</nuxeo.birt.version>
-    <nuxeo.suggestbox.version>6.1.3</nuxeo.suggestbox.version>
-    <nuxeo.rssreader.version>6.1.3</nuxeo.rssreader.version>
-    <nuxeo.dam.version>6.1.3</nuxeo.dam.version>
-    <nuxeo.poll.version>6.1.3</nuxeo.poll.version>
-    <nuxeo.quota.version>6.1.3</nuxeo.quota.version>
-    <nuxeo.web.mobile.version>6.1.3</nuxeo.web.mobile.version>
-    <nuxeo.indexing.gateway.version>6.1.3</nuxeo.indexing.gateway.version>
-    <nuxeo.exalead.connector.version>6.1.3</nuxeo.exalead.connector.version>
-    <nuxeo.user.registration.version>6.1.3</nuxeo.user.registration.version>
-    <nuxeo.rating.version>6.1.3</nuxeo.rating.version>
-    <nuxeo.agenda.version>6.1.3</nuxeo.agenda.version>
-    <nuxeo.templates.version>6.1.3</nuxeo.templates.version>
-    <nuxeo.csv.version>6.1.3</nuxeo.csv.version>
-    <nuxeo.drive.version>6.1.3</nuxeo.drive.version>
-    <nuxeo.dam.pdf.export.version>6.1.3</nuxeo.dam.pdf.export.version>
-    <nuxeo.resources.compat.version>6.1.3</nuxeo.resources.compat.version>
-    <nuxeo.dmk.version>6.1.3</nuxeo.dmk.version>
-    <nuxeo.webengine.sites.version>6.1.3</nuxeo.webengine.sites.version>
-    <nuxeo.style.guide.version>6.1.3</nuxeo.style.guide.version>
-    <nuxeo.imaging.recompute.version>6.1.3</nuxeo.imaging.recompute.version>
-    <nuxeo.box.version>6.1.3</nuxeo.box.version>
-    <nuxeo.easyshare.version>6.1.3</nuxeo.easyshare.version>
-    <nuxeo.logs.viewer.version>6.1.3</nuxeo.logs.viewer.version>
-    <nuxeo.spreadsheet.version>6.1.3</nuxeo.spreadsheet.version>
-    <nuxeo.datadog.reporter.version>6.1.3</nuxeo.datadog.reporter.version>
-    <nuxeo.target.platforms.version>6.1.3</nuxeo.target.platforms.version>
+    <nuxeo.addons.version>${project.version}</nuxeo.addons.version>
+    <nuxeo.opencmis.version>${project.version}</nuxeo.opencmis.version>
+    <nuxeo.businessdays.version>${project.version}</nuxeo.businessdays.version>
+    <nuxeo.facetedsearch.version>${project.version}</nuxeo.facetedsearch.version>
+    <nuxeo.shell.version>${project.version}</nuxeo.shell.version>
+    <nuxeo.webembedded.version>${project.version}</nuxeo.webembedded.version>
+    <nuxeo.opensocial.version>${project.version}</nuxeo.opensocial.version>
+    <nuxeo.fsconnectors.version>${project.version}</nuxeo.fsconnectors.version>
+    <nuxeo.classification.version>${project.version}</nuxeo.classification.version>
+    <nuxeo.importer.version>${project.version}</nuxeo.importer.version>
+    <nuxeo.routing.version>${project.version}</nuxeo.routing.version>
+    <nuxeo.smartsearch.version>${project.version}</nuxeo.smartsearch.version>
+    <nuxeo.audio.version>${project.version}</nuxeo.audio.version>
+    <nuxeo.video.version>${project.version}</nuxeo.video.version>
+    <nuxeo.categorization.version>${project.version}</nuxeo.categorization.version>
+    <nuxeo.replication.version>${project.version}</nuxeo.replication.version>
+    <nuxeo.activity.version>${project.version}</nuxeo.activity.version>
+    <nuxeo.sc.version>${project.version}</nuxeo.sc.version>
+    <nuxeo.birt.version>${project.version}</nuxeo.birt.version>
+    <nuxeo.suggestbox.version>${project.version}</nuxeo.suggestbox.version>
+    <nuxeo.rssreader.version>${project.version}</nuxeo.rssreader.version>
+    <nuxeo.dam.version>${project.version}</nuxeo.dam.version>
+    <nuxeo.poll.version>${project.version}</nuxeo.poll.version>
+    <nuxeo.quota.version>${project.version}</nuxeo.quota.version>
+    <nuxeo.web.mobile.version>${project.version}</nuxeo.web.mobile.version>
+    <nuxeo.indexing.gateway.version>${project.version}</nuxeo.indexing.gateway.version>
+    <nuxeo.exalead.connector.version>${project.version}</nuxeo.exalead.connector.version>
+    <nuxeo.user.registration.version>${project.version}</nuxeo.user.registration.version>
+    <nuxeo.rating.version>${project.version}</nuxeo.rating.version>
+    <nuxeo.agenda.version>${project.version}</nuxeo.agenda.version>
+    <nuxeo.templates.version>${project.version}</nuxeo.templates.version>
+    <nuxeo.csv.version>${project.version}</nuxeo.csv.version>
+    <nuxeo.drive.version>${project.version}</nuxeo.drive.version>
+    <nuxeo.dam.pdf.export.version>${project.version}</nuxeo.dam.pdf.export.version>
+    <nuxeo.resources.compat.version>${project.version}</nuxeo.resources.compat.version>
+    <nuxeo.dmk.version>${project.version}</nuxeo.dmk.version>
+    <nuxeo.webengine.sites.version>${project.version}</nuxeo.webengine.sites.version>
+    <nuxeo.style.guide.version>${project.version}</nuxeo.style.guide.version>
+    <nuxeo.imaging.recompute.version>${project.version}</nuxeo.imaging.recompute.version>
+    <nuxeo.box.version>${project.version}</nuxeo.box.version>
+    <nuxeo.easyshare.version>${project.version}</nuxeo.easyshare.version>
+    <nuxeo.logs.viewer.version>${project.version}</nuxeo.logs.viewer.version>
+    <nuxeo.spreadsheet.version>${project.version}</nuxeo.spreadsheet.version>
+    <nuxeo.datadog.reporter.version>${project.version}</nuxeo.datadog.reporter.version>
+    <nuxeo.target.platforms.version>${project.version}</nuxeo.target.platforms.version>
 
     <!-- optional addons -->
-    <nuxeo.jbpm.version>6.1.3</nuxeo.jbpm.version>
-    <nuxeo.semantic.entities.version>6.1.3</nuxeo.semantic.entities.version>
-    <nuxeo.sync.version>6.1.3</nuxeo.sync.version>
-    <nuxeo.javaagent.version>6.1.3</nuxeo.javaagent.version>
-    <nuxeo.fsexporter.version>6.1.3</nuxeo.fsexporter.version>
+    <nuxeo.jbpm.version>${project.version}</nuxeo.jbpm.version>
+    <nuxeo.semantic.entities.version>${project.version}</nuxeo.semantic.entities.version>
+    <nuxeo.sync.version>${project.version}</nuxeo.sync.version>
+    <nuxeo.javaagent.version>${project.version}</nuxeo.javaagent.version>
+    <nuxeo.fsexporter.version>${project.version}</nuxeo.fsexporter.version>
     <!-- end of optional addons -->
   </properties>
 
@@ -89,7 +89,7 @@
     <!-- <module>nuxeo-birt</module>
     <module>nuxeo-activity</module>
     <module>nuxeo-social-collaboration</module>-->
-    <module>nuxeo-platform-suggestbox</module> 
+    <module>nuxeo-platform-suggestbox</module>
     <!-- <module>nuxeo-dam</module>  dépend de activity -->
     <module>nuxeo-quota</module>
     <!-- <module>nuxeo-platform-indexing-gateway</module>
@@ -1135,8 +1135,8 @@
 
   <repositories>
     <repository>
-      <id>public</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
+      <id>${releaseRepoId}</id>
+      <url>${releaseRepoUrl}</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -1145,8 +1145,8 @@
       </snapshots>
     </repository>
     <repository>
-      <id>public-snapshot</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public-snapshot</url>
+      <id>${snapshotRepoId}</id>
+      <url>${snapshotRepoUrl}</url>
       <releases>
         <enabled>false</enabled>
       </releases>
@@ -1159,8 +1159,8 @@
 
   <pluginRepositories>
     <pluginRepository>
-      <id>public</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
+      <id>${releaseRepoId}</id>
+      <url>${releaseRepoUrl}</url>
       <name>Nuxeo virtual release repository</name>
       <releases>
         <enabled>true</enabled>
@@ -1170,8 +1170,8 @@
       </snapshots>
     </pluginRepository>
     <pluginRepository>
-      <id>public-snapshot</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public-snapshot</url>
+      <id>${snapshotRepoId}</id>
+      <url>${snapshotRepoUrl}</url>
       <name>Nuxeo virtual snapshot repository</name>
       <releases>
         <enabled>false</enabled>

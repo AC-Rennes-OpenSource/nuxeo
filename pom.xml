@@ -92,7 +92,7 @@
     <module>nuxeo-theme</module>
     <module>nuxeo-webengine</module>
     <module>nuxeo-dm</module>
-    
+
     <module>addons</module>
     <module>nuxeo-distribution</module>
   </modules>
@@ -122,15 +122,15 @@
     <!-- <license.useMissingFile>true</license.useMissingFile> -->
     <!-- <license.missingFile>src/main/license/THIRD-PARTY.properties</license.missingFile> -->
 
-    <nuxeo.common.version>6.1.3</nuxeo.common.version>
-    <nuxeo.runtime.version>6.1.3</nuxeo.runtime.version>
-    <nuxeo.core.version>6.1.3</nuxeo.core.version>
-    <nuxeo.services.version>6.1.3</nuxeo.services.version>
-    <nuxeo.theme.version>6.1.3</nuxeo.theme.version>
-    <nuxeo.jsf.version>6.1.3</nuxeo.jsf.version>
-    <nuxeo.dm.version>6.1.3</nuxeo.dm.version>
-    <nuxeo.webengine.version>6.1.3</nuxeo.webengine.version>
-    <nuxeo.features.version>6.1.3</nuxeo.features.version>
+    <nuxeo.common.version>${project.version}</nuxeo.common.version>
+    <nuxeo.runtime.version>${project.version}</nuxeo.runtime.version>
+    <nuxeo.core.version>${project.version}</nuxeo.core.version>
+    <nuxeo.services.version>${project.version}</nuxeo.services.version>
+    <nuxeo.theme.version>${project.version}</nuxeo.theme.version>
+    <nuxeo.jsf.version>${project.version}</nuxeo.jsf.version>
+    <nuxeo.dm.version>${project.version}</nuxeo.dm.version>
+    <nuxeo.webengine.version>${project.version}</nuxeo.webengine.version>
+    <nuxeo.features.version>${project.version}</nuxeo.features.version>
 
     <nuxeo.connect.client.version>1.4.24.3</nuxeo.connect.client.version>
     <!-- nuxeo-distribution-tools is still used as a dependency -->
@@ -5271,7 +5271,7 @@
       </plugins>
     </pluginManagement>
   </build>
-<!-- 
+<!--
   <reporting>
     <plugins>
       <plugin>
@@ -6009,10 +6009,9 @@
   </scm>
 
   <repositories>
-    <!-- Hotfix Repositories -->
     <repository>
-      <id>hotfix-releases</id>
-      <url>https://maven.nuxeo.org/nexus/content/repositories/hotfix-releases</url>
+      <id>${releaseRepoId}</id>
+      <url>${releaseRepoUrl}</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -6021,29 +6020,8 @@
       </snapshots>
     </repository>
     <repository>
-      <id>hotfix-snapshots</id>
-      <url>https://maven.nuxeo.org/nexus/content/repositories/hotfix-snapshots</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <updatePolicy>always</updatePolicy>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>public</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>public-snapshot</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public-snapshot</url>
+      <id>${snapshotRepoId}</id>
+      <url>${snapshotRepoUrl}</url>
       <releases>
         <enabled>false</enabled>
       </releases>
@@ -6055,31 +6033,28 @@
   </repositories>
 
   <pluginRepositories>
-    <pluginRepository>
-      <id>public</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
-      <name>Nuxeo virtual release repository</name>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </pluginRepository>
-    <pluginRepository>
-      <id>public-snapshot</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public-snapshot</url>
-      <name>Nuxeo virtual snapshot repository</name>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <updatePolicy>always</updatePolicy>
-        <enabled>true</enabled>
-      </snapshots>
-    </pluginRepository>
+      <pluginRepository>
+        <id>${releaseRepoId}</id>
+        <url>${releaseRepoUrl}</url>
+        <releases>
+          <enabled>true</enabled>
+        </releases>
+        <snapshots>
+          <enabled>false</enabled>
+        </snapshots>
+      </pluginRepository>
+      <pluginRepository>
+        <id>${snapshotRepoId}</id>
+        <url>${snapshotRepoUrl}</url>
+        <releases>
+          <enabled>false</enabled>
+        </releases>
+        <snapshots>
+          <updatePolicy>always</updatePolicy>
+          <enabled>true</enabled>
+        </snapshots>
+      </pluginRepository>
   </pluginRepositories>
-
 
   <distributionManagement>
     <repository>
@@ -6091,19 +6066,5 @@
       <url>${snapshotRepoUrl}</url>
     </snapshotRepository>
   </distributionManagement>
-
-<!--
-  <distributionManagement>
-    <repository>
-      <id>osivia-thirdparty</id>
-      <url>http://www.osivia.org/nexus/content/repositories/thirdparty/</url>
-    </repository>
-    <snapshotRepository>
-      <id>hotfix-snapshots</id>
-      <url>http://mavenin.nuxeo.com/nexus/content/repositories/hotfix-snapshots</url>
-      <uniqueVersion>true</uniqueVersion>
-    </snapshotRepository>
-  </distributionManagement>
--->
 
 </project>

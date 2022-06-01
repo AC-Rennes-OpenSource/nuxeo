@@ -64,8 +64,8 @@
 
   <repositories>
     <repository>
-      <id>public</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
+      <id>${releaseRepoId}</id>
+      <url>${releaseRepoUrl}</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -74,8 +74,8 @@
       </snapshots>
     </repository>
     <repository>
-      <id>public-snapshot</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public-snapshot</url>
+      <id>${snapshotRepoId}</id>
+      <url>${snapshotRepoUrl}</url>
       <releases>
         <enabled>false</enabled>
       </releases>
@@ -98,8 +98,8 @@
 
   <pluginRepositories>
     <pluginRepository>
-      <id>public</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
+      <id>${releaseRepoId}</id>
+      <url>${releaseRepoUrl}</url>
       <name>Nuxeo releases</name>
       <releases>
         <enabled>true</enabled>
