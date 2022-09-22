@@ -21,7 +21,7 @@
   </modules>
 
   <properties>
-    <nuxeo.importer.version>6.1.0</nuxeo.importer.version>
+    <nuxeo.importer.version>RAB-6.1.5</nuxeo.importer.version>
   </properties>
 
   <dependencyManagement>
