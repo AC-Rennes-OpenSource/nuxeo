@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.nuxeo.ecm.webengine</groupId>
     <artifactId>nuxeo-webengine-parent</artifactId>
-    <version>RAB-6.1.6-RC02-SNAPSHOT</version>
+    <version>RAB-6.1.6-RC02</version>
   </parent>
 
   <artifactId>nuxeo-theme-webengine</artifactId>
