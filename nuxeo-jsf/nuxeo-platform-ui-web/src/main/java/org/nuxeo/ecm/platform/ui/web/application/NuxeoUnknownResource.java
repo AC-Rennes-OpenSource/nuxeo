@@ -26,6 +26,8 @@ import java.net.URLStreamHandler;
 
 import javax.faces.application.ViewResource;
 
+import org.nuxeo.runtime.api.Framework;
+
 import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -50,12 +52,19 @@ public class NuxeoUnknownResource extends ViewResource {
 
     protected final String path;
 
-    protected final String errorMessage;
+    protected String errorMessage;
 
     public NuxeoUnknownResource(String path) {
         super();
         this.path = path;
-        errorMessage = String.format("ERROR: facelet not found at '%s'", path);
+        /** FIX SECURITY ISSUE : CVE-2018-16341 / NXP-25746
+         * (See PoC : https://github.com/puckiestyle/CVE-2018-16341)
+         */
+        errorMessage = "ERROR: facelet not found";
+        if (Framework.isDevModeSet() && !path.contains("$") && !path.contains("#")) {
+        	errorMessage += " at '" + path + "'";
+        }
+        /** END OF FIX */
     }
 
     @Override
