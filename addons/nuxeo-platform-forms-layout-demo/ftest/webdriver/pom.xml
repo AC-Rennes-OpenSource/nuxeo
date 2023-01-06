@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
-    <version>RAB-6.1.6-RC02</version>
+    <version>RAB-6.1.7-SNAPSHOT</version>
     <relativePath>../../../../nuxeo-distribution/pom.xml</relativePath>
   </parent>
 
