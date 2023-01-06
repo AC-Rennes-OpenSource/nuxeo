@@ -4,7 +4,7 @@
   <parent>
     <artifactId>nuxeo-platform-tag-parent</artifactId>
     <groupId>org.nuxeo.ecm.platform</groupId>
-    <version>RAB-6.1.6-RC02</version>
+    <version>RAB-6.1.6</version>
   </parent>
 
   <artifactId>nuxeo-platform-tag-core</artifactId>
