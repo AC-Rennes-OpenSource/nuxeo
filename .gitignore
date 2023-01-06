@@ -37,3 +37,4 @@ nuxeo-features/nuxeo-opensocial/nuxeo-opensocial-container/war/
 nuxeo-features/nuxeo-opensocial/nuxeo-opensocial-container/.gwt
 .factorypath
 pom.xml.releaseBackup
+pom.xml.versionsBackup
