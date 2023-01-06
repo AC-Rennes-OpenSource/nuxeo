@@ -4,7 +4,7 @@
   <parent>
     <artifactId>nuxeo-services-parent</artifactId>
     <groupId>org.nuxeo.ecm.platform</groupId>
-    <version>RAB-6.1.6</version>
+    <version>RAB-6.1.6-RC02</version>
   </parent>
 
   <artifactId>nuxeo-platform-test</artifactId>

@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.nuxeo.ecm.core</groupId>
     <artifactId>nuxeo-core-binarymanager-cloud</artifactId>
-    <version>RAB-6.1.6</version>
+    <version>RAB-6.1.6-RC02</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
